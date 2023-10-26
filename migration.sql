@@ -1,10 +1,7 @@
+DROP TABLE IF EXISTS thing;
+DROP TABLE IF EXISTS number;
 
-DROP TABLE IF EXISTS numbers;
-
-
-CREATE TABLE numbers (
-    id SERIAL PRIMARY KEY,
-    number INT NOT NULL
+CREATE TABLE number (
+  id SERIAL PRIMARY KEY,
+  num INTEGER
 );
-
-INSERT INTO numbers (number) VALUES (1), (2), (3), (4), (5), (12345);
